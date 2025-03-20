@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "multi-agent-system"
+version = "0.1.0"
+description = "Dynamic conversational form-filling system with conditional logic"
+authors = ["jamalkhoukabi <jambond8@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "src", from = "." }
+]
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "1.0.0"
+pydantic = "^2.6.4"
+together = "^1.4.1"
+groq = "^0.18.0"
+requests = "^2.32.3"
+asteval = "^1.0.6"
+langchain = "^0.3.20"
+langchain-community = "^0.3.19"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pytest-mock = "^3.14.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
